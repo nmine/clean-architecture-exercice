@@ -2,18 +2,17 @@ package be.nmine.challenges.steps;
 
 import be.nmine.challenges.application.usecases.CreateChallengeCommand;
 import be.nmine.challenges.application.usecases.CreateChallengeHandler;
-import be.nmine.challenges.repository.ChallengeRepository;
-import cucumber.api.java.en.When;
+import be.nmine.challenges.domain.challenge.Challenge;
+import cucumber.api.java8.En;
 
-import static be.nmine.challenges.domain.challenge.Challenge.from;
+public class ChallengeStep implements En {
 
-public class ChallengeStep {
+    public ChallengeStep(CreateChallengeHandler createChallengeHandler) {
+        When("^I create a new challenge with title \"([^\"]*)\" and category \"([^\"]*)\"$", (String title, String category) -> {
+            createChallengeHandler.handle(new CreateChallengeCommand(Challenge.from(title, category)));
+        });
+        Then("^I see the challenge display \"([^\"]*)\"  with title \"([^\"]*)\" and category \"([^\"]*)\"$", (String name, String title, String category) -> {
 
-    private CreateChallengeHandler createChallengeHandler;
-    private ChallengeRepository challengeRepository;
-
-    @When("I create a new challenge with title {string} and category {string}")
-    public void iCreateANewChallengeWithTitleAndCategory(String challengeTitle, String category) {
-        createChallengeHandler.handle(new CreateChallengeCommand(from(challengeTitle, category)));
+        });
     }
 }

@@ -2,12 +2,10 @@ package be.nmine.challenges.adapters;
 
 import be.nmine.challenges.domain.challenge.Challenge;
 import be.nmine.challenges.repository.ChallengeRepository;
-import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
 public class ChallengeRepositoryInMemory implements ChallengeRepository {
 
     public List<Challenge> challenges = new ArrayList<>();
