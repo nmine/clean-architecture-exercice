@@ -1,7 +1,7 @@
-package be.nmine.challenges.configuration;
+package be.nmine.challenges.acceptance.configuration;
 
 import be.nmine.challenges.adapters.ChallengeRepositoryInMemory;
-import be.nmine.challenges.application.usecases.CreateChallengeHandler;
+import be.nmine.challenges.unit.usecases.CreateChallengeHandler;
 import be.nmine.challenges.repository.ChallengeRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

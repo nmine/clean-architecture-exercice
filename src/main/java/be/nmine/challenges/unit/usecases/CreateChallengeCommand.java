@@ -1,4 +1,4 @@
-package be.nmine.challenges.application.usecases;
+package be.nmine.challenges.unit.usecases;
 
 import be.nmine.challenges.domain.challenge.Challenge;
 

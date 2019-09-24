@@ -1,4 +1,4 @@
-package be.nmine.challenges.configuration;
+package be.nmine.challenges.acceptance.configuration;
 
 import cucumber.api.java8.En;
 import org.springframework.test.context.ContextConfiguration;

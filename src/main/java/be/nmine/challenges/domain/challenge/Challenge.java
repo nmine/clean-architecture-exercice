@@ -6,7 +6,7 @@ public class Challenge {
     public String category;
 
     private  Challenge(String challengeTitle, String category) {
-        this.title = title;
+        this.title = challengeTitle;
         this.category = category;
     }
 

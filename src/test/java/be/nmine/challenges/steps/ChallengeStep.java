@@ -1,7 +1,7 @@
 package be.nmine.challenges.steps;
 
-import be.nmine.challenges.application.usecases.CreateChallengeCommand;
-import be.nmine.challenges.application.usecases.CreateChallengeHandler;
+import be.nmine.challenges.unit.usecases.CreateChallengeCommand;
+import be.nmine.challenges.unit.usecases.CreateChallengeHandler;
 import be.nmine.challenges.domain.challenge.Challenge;
 import cucumber.api.java8.En;
 
