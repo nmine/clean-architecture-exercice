@@ -1,7 +1,13 @@
 package be.nmine.challenges.domain.challenge;
 
+import be.nmine.challenges.documentation.Builder;
+import be.nmine.challenges.documentation.BusinessDomain;
+
 import java.util.Objects;
 
+import static be.nmine.challenges.documentation.Domain.ALLOCATION;
+
+@BusinessDomain(value = ALLOCATION)
 public class Challenge {
 
     public final String title;
@@ -34,7 +40,7 @@ public class Challenge {
         return Objects.hash(title, category);
     }
 
-
+    @Builder
     public static final class ChallengeBuilder {
         public String title;
         public String category;

@@ -3,8 +3,8 @@ package unit;
 
 import be.nmine.challenges.repository.ChallengeRepository;
 import be.nmine.challenges.repository.ChallengeRepositoryInMemory;
-import be.nmine.challenges.usecases.CreateChallengeCommand;
-import be.nmine.challenges.usecases.CreateChallengeHandler;
+import be.nmine.challenges.application.usecases.CreateChallengeCommand;
+import be.nmine.challenges.application.usecases.CreateChallengeHandler;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;

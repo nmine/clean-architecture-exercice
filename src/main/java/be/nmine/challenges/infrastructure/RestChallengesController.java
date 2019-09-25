@@ -2,11 +2,8 @@ package be.nmine.challenges.infrastructure;
 
 import be.nmine.challenges.infrastructure.dto.ChallengeDTO;
 import be.nmine.challenges.repository.ChallengeRepository;
-import be.nmine.challenges.repository.ChallengeRepositoryInMemory;
-import be.nmine.challenges.usecases.CreateChallengeCommand;
-import be.nmine.challenges.usecases.CreateChallengeHandler;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import be.nmine.challenges.application.usecases.CreateChallengeCommand;
+import be.nmine.challenges.application.usecases.CreateChallengeHandler;
 import org.springframework.web.bind.annotation.*;
 
 import static be.nmine.challenges.infrastructure.dto.ChallengeDTOFactory.from;

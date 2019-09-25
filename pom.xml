@@ -7,18 +7,6 @@
     <artifactId>challenges</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 
 
     <parent>
@@ -26,6 +14,11 @@
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>2.1.6.RELEASE</version>
     </parent>
+
+    <properties>
+        <plugin.livingdoc-maven-plugin.version>0.3</plugin.livingdoc-maven-plugin.version>
+    </properties>
+
 
     <dependencies>
         <dependency>
@@ -79,4 +72,119 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <!--            Add :-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.3.0/viz.js"></script>-->
+            <plugin>
+                <groupId>io.github.livingdocumentation</groupId>
+                <artifactId>livingdoc-maven-plugin</artifactId>
+                <version>${plugin.livingdoc-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>wordcloud</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>wordcloud</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <includes>
+                        <include>**/domain/**/*.java</include>
+                    </includes>
+                    <excludes>
+                        <exclude>**/annotations/**</exclude>
+                        <exclude>**/package-info.java</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+            <!--            Add :-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.3.0/viz.js"></script>-->
+            <plugin>
+                <groupId>io.github.livingdocumentation</groupId>
+                <artifactId>livingdoc-maven-plugin</artifactId>
+                <version>${plugin.livingdoc-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>glossary</id>
+                        <phase>generate-resources</phase>
+                        <goals>
+                            <goal>glossary</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <!--            Add:-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.3.0/viz.js"></script>-->
+            <plugin>
+                <groupId>io.github.livingdocumentation</groupId>
+                <artifactId>livingdoc-maven-plugin</artifactId>
+                <version>${plugin.livingdoc-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>diagram</id>
+                        <goals>
+                            <goal>diagram</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <prefix>be.nmine.challenges</prefix>
+                    <coreDomain>domain</coreDomain>
+                    <packageExcludes>
+                        <packageExcludes>regex1</packageExcludes>
+                        <packageExcludes>regex2</packageExcludes>
+                    </packageExcludes>
+                </configuration>
+            </plugin>
+            <!--            Add :-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>-->
+            <!--            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.3.0/viz.js"></script>-->
+            <plugin>
+                <groupId>io.github.livingdocumentation</groupId>
+                <artifactId>livingdoc-maven-plugin</artifactId>
+                <version>${plugin.livingdoc-maven-plugin.version}</version>
+                <executions>
+                    <execution>
+                        <id>tour</id>
+                        <goals>
+                            <goal>tour</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <prefix>be.nmine.challenges</prefix>
+                    <tourAnnotation>be.nmine.challenges.documentation.GuidedTour</tourAnnotation>
+                    <outputDirectory>target/generated-docs</outputDirectory>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.ferstl</groupId>
+                <artifactId>depgraph-maven-plugin</artifactId>
+                <version>3.3.0</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
