@@ -1,18 +1,19 @@
-package be.nmine.challenges.adapters;
+package be.nmine.challenges.repository;
 
 import be.nmine.challenges.domain.challenge.Challenge;
-import be.nmine.challenges.repository.ChallengeRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ChallengeRepositoryInMemory implements ChallengeRepository {
-
+    Logger logger = LoggerFactory.getLogger(ChallengeRepositoryInMemory.class);
     public List<Challenge> challenges = new ArrayList<>();
 
     @Override
     public Challenge getChallenge(int id) {
-        return null;
+        return challenges.get(0);
     }
 
     @Override

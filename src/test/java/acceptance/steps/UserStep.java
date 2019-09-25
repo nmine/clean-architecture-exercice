@@ -1,4 +1,4 @@
-package be.nmine.challenges.steps;
+package acceptance.steps;
 
 import cucumber.api.java8.En;
 

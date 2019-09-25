@@ -8,4 +8,5 @@ Feature:  All user - Create challenge
 
     Examples:
       | first_name_user | last_name_user | challenge_title               |  category         |
-      | Nicolas         | Mine           | Ne pas manger de sucre       |  alimentation     |
+      | Nicolas         | Mine           | Ne pas manger de sucre        |  alimentation     |
+      | Bilbo           | Sacquet        | Aller à la salle de sport     |  exercices     |

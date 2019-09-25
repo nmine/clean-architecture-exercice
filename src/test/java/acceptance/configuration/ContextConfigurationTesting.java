@@ -1,10 +1,9 @@
-package be.nmine.challenges.acceptance.configuration;
+package acceptance.configuration;
 
 import cucumber.api.java8.En;
 import org.springframework.test.context.ContextConfiguration;
 
-@ContextConfiguration(classes = {
-        RepositoriesConfiguration.class})
+@ContextConfiguration(classes = {RepositoriesConfiguration.class})
 class ContextConfigurationTesting implements En {
 
 }

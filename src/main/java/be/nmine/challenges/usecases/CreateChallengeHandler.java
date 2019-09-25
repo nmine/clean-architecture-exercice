@@ -1,4 +1,4 @@
-package be.nmine.challenges.unit.usecases;
+package be.nmine.challenges.usecases;
 
 import be.nmine.challenges.repository.ChallengeRepository;
 
@@ -13,4 +13,5 @@ public class CreateChallengeHandler {
     public void handle(CreateChallengeCommand createChallengeCommand) {
         challengeRepository.save(createChallengeCommand.challenge);
     }
+
 }

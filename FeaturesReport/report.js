@@ -54,6 +54,16 @@ formatter.examples({
       ],
       "line": 11,
       "id": "all-user---create-challenge;new-challenge;;2"
+    },
+    {
+      "cells": [
+        "Bilbo",
+        "Sacquet",
+        "Aller à la salle de sport",
+        "exercices"
+      ],
+      "line": 12,
+      "id": "all-user---create-challenge;new-challenge;;3"
     }
   ],
   "keyword": "Examples"
@@ -93,16 +103,149 @@ formatter.step({
   ],
   "keyword": "Then "
 });
-formatter.match({});
-formatter.result({
-  "status": "undefined"
+formatter.match({
+  "arguments": [
+    {
+      "val": "Nicolas",
+      "offset": 22
+    },
+    {
+      "val": "Mine",
+      "offset": 32
+    }
+  ],
+  "location": "UserStep.java:7"
 });
-formatter.match({});
 formatter.result({
-  "status": "undefined"
+  "duration": 142271600,
+  "status": "passed"
 });
-formatter.match({});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ne pas manger de sucre",
+      "offset": 37
+    },
+    {
+      "val": "alimentation",
+      "offset": 75
+    }
+  ],
+  "location": "ChallengeStep.java:12"
+});
 formatter.result({
-  "status": "undefined"
+  "duration": 1457900,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Ne pas manger de sucre",
+      "offset": 29
+    },
+    {
+      "val": "Ne pas manger de sucre",
+      "offset": 66
+    },
+    {
+      "val": "alimentation",
+      "offset": 104
+    }
+  ],
+  "location": "ChallengeStep.java:15"
+});
+formatter.result({
+  "duration": 134100,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 12,
+  "name": "new challenge",
+  "description": "",
+  "id": "all-user---create-challenge;new-challenge;;3",
+  "type": "scenario",
+  "keyword": "Scenario Outline"
+});
+formatter.step({
+  "line": 5,
+  "name": "I\u0027m authenticated as \"Bilbo\" \"Sacquet\"",
+  "matchedColumns": [
+    0,
+    1
+  ],
+  "keyword": "Given "
+});
+formatter.step({
+  "line": 6,
+  "name": "I create a new challenge with title \"Aller à la salle de sport\" and category \"exercices\"",
+  "matchedColumns": [
+    2,
+    3
+  ],
+  "keyword": "When "
+});
+formatter.step({
+  "line": 7,
+  "name": "I see the challenge display \"Aller à la salle de sport\"  with title \"Aller à la salle de sport\" and category \"exercices\"",
+  "matchedColumns": [
+    2,
+    3
+  ],
+  "keyword": "Then "
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Bilbo",
+      "offset": 22
+    },
+    {
+      "val": "Sacquet",
+      "offset": 30
+    }
+  ],
+  "location": "UserStep.java:7"
+});
+formatter.result({
+  "duration": 84600,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Aller à la salle de sport",
+      "offset": 37
+    },
+    {
+      "val": "exercices",
+      "offset": 78
+    }
+  ],
+  "location": "ChallengeStep.java:12"
+});
+formatter.result({
+  "duration": 63400,
+  "status": "passed"
+});
+formatter.match({
+  "arguments": [
+    {
+      "val": "Aller à la salle de sport",
+      "offset": 29
+    },
+    {
+      "val": "Aller à la salle de sport",
+      "offset": 69
+    },
+    {
+      "val": "exercices",
+      "offset": 110
+    }
+  ],
+  "location": "ChallengeStep.java:15"
+});
+formatter.result({
+  "duration": 111100,
+  "status": "passed"
 });
 });

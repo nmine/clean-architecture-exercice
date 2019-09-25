@@ -1,4 +1,4 @@
-package be.nmine.challenges.acceptance;
+package acceptance;
 
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
