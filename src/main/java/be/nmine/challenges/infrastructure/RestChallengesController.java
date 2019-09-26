@@ -1,14 +1,18 @@
 package be.nmine.challenges.infrastructure;
 
-import be.nmine.challenges.infrastructure.dto.ChallengeDTO;
-import be.nmine.challenges.repository.ChallengeRepository;
 import be.nmine.challenges.application.usecases.CreateChallengeCommand;
 import be.nmine.challenges.application.usecases.CreateChallengeHandler;
+import be.nmine.challenges.documentation.GuidedTour;
+import be.nmine.challenges.domain.repository.ChallengeRepository;
+import be.nmine.challenges.infrastructure.dto.ChallengeDTO;
 import org.springframework.web.bind.annotation.*;
 
 import static be.nmine.challenges.infrastructure.dto.ChallengeDTOFactory.from;
 
 @RestController
+@GuidedTour(rank = 0,
+        description = "Infrastructure , Rest controller that will execute the business rule by caling the handler",
+        name = "BusinessRuleCreateChallenge")
 public class RestChallengesController {
 
     private final CreateChallengeHandler createChallengeHandler;

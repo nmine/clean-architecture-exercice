@@ -2,11 +2,20 @@ package be.nmine.challenges.domain.challenge;
 
 import be.nmine.challenges.documentation.Builder;
 import be.nmine.challenges.documentation.BusinessDomain;
+import be.nmine.challenges.documentation.Glossary;
+import be.nmine.challenges.documentation.GuidedTour;
 
 import java.util.Objects;
 
 import static be.nmine.challenges.documentation.Domain.ALLOCATION;
 
+@GuidedTour(rank = 3,
+        description = "Business object",
+        name = "BusinessRuleCreateChallenge")
+/**
+ A action to repeat every day created by a user of the application
+ */
+@Glossary
 @BusinessDomain(value = ALLOCATION)
 public class Challenge {
 

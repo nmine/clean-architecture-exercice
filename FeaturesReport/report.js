@@ -117,7 +117,7 @@ formatter.match({
   "location": "UserStep.java:7"
 });
 formatter.result({
-  "duration": 122373700,
+  "duration": 128148900,
   "status": "passed"
 });
 formatter.match({
@@ -134,7 +134,7 @@ formatter.match({
   "location": "ChallengeStep.java:12"
 });
 formatter.result({
-  "duration": 1229400,
+  "duration": 1194000,
   "status": "passed"
 });
 formatter.match({
@@ -155,7 +155,7 @@ formatter.match({
   "location": "ChallengeStep.java:15"
 });
 formatter.result({
-  "duration": 178800,
+  "duration": 89000,
   "status": "passed"
 });
 formatter.scenario({
@@ -207,7 +207,7 @@ formatter.match({
   "location": "UserStep.java:7"
 });
 formatter.result({
-  "duration": 78200,
+  "duration": 99700,
   "status": "passed"
 });
 formatter.match({
@@ -224,7 +224,7 @@ formatter.match({
   "location": "ChallengeStep.java:12"
 });
 formatter.result({
-  "duration": 71100,
+  "duration": 86000,
   "status": "passed"
 });
 formatter.match({
@@ -245,7 +245,7 @@ formatter.match({
   "location": "ChallengeStep.java:15"
 });
 formatter.result({
-  "duration": 86700,
+  "duration": 128700,
   "status": "passed"
 });
 });

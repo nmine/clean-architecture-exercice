@@ -1,14 +1,16 @@
-package be.nmine.challenges.repository;
+package be.nmine.challenges.infrastructure;
 
+import be.nmine.challenges.documentation.GuidedTour;
 import be.nmine.challenges.domain.challenge.Challenge;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import be.nmine.challenges.domain.repository.ChallengeRepository;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@GuidedTour(rank = 1, description = "Infrastructure , concrete implementation fo the business repository",
+        name = "BusinessRuleCreateChallenge")
 public class ChallengeRepositoryInMemory implements ChallengeRepository {
-    Logger logger = LoggerFactory.getLogger(ChallengeRepositoryInMemory.class);
+
     public List<Challenge> challenges = new ArrayList<>();
 
     @Override

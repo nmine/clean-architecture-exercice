@@ -1,6 +1,6 @@
 package be.nmine.challenges.application.usecases;
 
-import be.nmine.challenges.repository.ChallengeRepository;
+import be.nmine.challenges.domain.repository.ChallengeRepository;
 
 public class CreateChallengeHandler {
 
