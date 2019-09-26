@@ -43,3 +43,18 @@ Pour ce faire,
 <br/> -Ecrire le code qui fait passer la rêgle métier
 <br/> -Ecrire le test d'intégration
 <br/> -Ecrire le code qui fait passer le test d'intégration
+
+Implémenter un scénario avec une nouvelle use case:
+Feature:  All user - Delete challenge
+  A user want to Delete a existing  challenge
+
+  Scenario Outline: delete challenge
+    Given I'm authenticated as "<first_name_user>" "<last_name_user>"
+    When I delete an existing challenge with title "<challenge_title>" and category "<category>"
+    Then I doesn't see any more the challenge with title "<challenge_title>" and category "<category>"
+
+    Examples:
+      | first_name_user | last_name_user | challenge_title           | category     |
+      | Nicolas         | Mine           | Ne pas manger de sucre    | alimentation |
+      | Bilbo           | Sacquet        | Aller à la salle de sport | exercices    |
+
