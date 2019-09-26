@@ -27,9 +27,9 @@ Pour visualiser la documentation (le wordcloud, le diagramme et la visite guidé
   <br/>  When I create an existing challenge with title "<challenge_title>" and category "<category>"
   <br/>  Then I see the modification no any new challenge is created
 </p>
-    Examples:
+  Examples:
       | first_name_user | last_name_user | challenge_title               |  category         |
-      | Seldon          | Seldon         |                               |  alimentation     |
+      | Seldon          | Hari           |                               |  alimentation     |
       | Bilbo           | Sacquet        |                               |  exercices        |
                         
 Il fait partie de la feature "All user - Create challenge".
