@@ -13,7 +13,7 @@ Des plugs in Maven permetant de faire de la 'living documentation' ont été ajo
 Pour visualiser la documentation (le wordcloud, le diagramme et la visite guidée) Il faut rajouter les lignes suivantes entre les tags head des pages html :
 
 
-  <br><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <br/><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
   <br><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js">    </script>
   <br><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.3.0/viz.js"></script>
   <br><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Naereen/StrapDown.js@master/strapdown.min.js"></script>
@@ -44,14 +44,14 @@ Pour ce faire,
 <br/> -Ecrire le test d'intégration
 <br/> -Ecrire le code qui fait passer le test d'intégration
 
-Implémenter un scénario avec une nouvelle use case:
-Feature:  All user - Delete challenge
-  A user want to Delete a existing  challenge
+<br/>Implémenter un scénario avec une nouvelle use case:
+<br/>Feature:  All user - Delete challenge
+  <br/>A user want to Delete a existing  challenge
 
-  Scenario Outline: delete challenge
-    Given I'm authenticated as "<first_name_user>" "<last_name_user>"
-    When I delete an existing challenge with title "<challenge_title>" and category "<category>"
-    Then I doesn't see any more the challenge with title "<challenge_title>" and category "<category>"
+  <br/>Scenario Outline: delete challenge
+    <br/>Given I'm authenticated as "<first_name_user>" "<last_name_user>"
+    <br/>When I delete an existing challenge with title "<challenge_title>" and category "<category>"
+    <br/>Then I doesn't see any more the challenge with title "<challenge_title>" and category "<category>"
 
     Examples:
       | first_name_user | last_name_user | challenge_title           | category     |
