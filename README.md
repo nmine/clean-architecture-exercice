@@ -36,6 +36,6 @@ Il fait partie de la feature "All user - Create challenge".
 
 Pour ce faire, 
 <br/> -ajouter le scénario dans le fichier Gherkin
--Implementer les tests (alt+enter sur le text dans le Gerkins et demander à Intelij de créer la méthode)
--Ecrire le test unitaire
--Ecrire le test d'intégration
+<br/> -Implementer les tests (alt+enter sur le text dans le Gerkins et demander à Intelij de créer la méthode)
+<br/> -Ecrire le test unitaire
+<br/> -Ecrire le test d'intégration
