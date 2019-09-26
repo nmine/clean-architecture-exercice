@@ -20,14 +20,22 @@ Pour visualiser la documentation (le wordcloud, le diagramme et la visite guidé
   
   Exercise:
   
+  Implémenter le scénario suivant: 
 
   Scenario Outline: invalid challenge
     Given I'm authenticated as "<first_name_user>" "<last_name_user>"
-    When I create an existing challenge with empty title and category "<category>"
+    When I create an existing challenge with title "<challenge_title>" and category "<category>"
     Then I see the modification no any new challenge is created
 
     Examples:
       | first_name_user | last_name_user | challenge_title               |  category         |
-      | Nicolas         | Mine           |                               |  alimentation     |
-      | Bilbo           | Sacquet        |                               |  exercices     |
+      | Seldon          | Seldon         |                               |  alimentation     |
+      | Bilbo           | Sacquet        |                               |  exercices        |
                         
+Il fait partie de la feature "All user - Create challenge".
+
+Pour ce faire, 
+-ajouter le scénario dans le fichier Gherkin
+-Implementer les tests (alt+enter sur le text dans le Gerkins et demander à Intelij de créer la méthode)
+-Ecrire le test unitaire
+-Ecrire le test d'intégration
