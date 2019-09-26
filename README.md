@@ -9,6 +9,7 @@ Des plugs in Maven permetant de faire de la 'living documentation' ont été ajo
 
 ![alt text](https://user-images.githubusercontent.com/4274325/65676632-88e18f80-e050-11e9-86ad-325668dd0d8a.png)
 
+Les résultats des tests BDD peuvent être visualisé dans un navigateur à l'adresse {project_path}/FeatureReport/index.html.
 
 Pour visualiser la documentation (le wordcloud, le diagramme et la visite guidée) Il faut rajouter les lignes suivantes entre les tags head des pages html :
 
