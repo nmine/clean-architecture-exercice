@@ -37,5 +37,8 @@ Il fait partie de la feature "All user - Create challenge".
 Pour ce faire, 
 <br/> -ajouter le scénario dans le fichier Gherkin
 <br/> -Implementer les tests (alt+enter sur le text dans le Gerkins et demander à Intelij de créer la méthode)
+<br/> -Ecrire le code jusqu'a ce que ca plante à cause de la rêgle métier
 <br/> -Ecrire le test unitaire
+<br/> -Ecrire le code qui fait passer la rêgle métier
 <br/> -Ecrire le test d'intégration
+<br/> -Ecrire le code qui fait passer le test d'intégration
