@@ -21,12 +21,12 @@ Pour visualiser la documentation (le wordcloud, le diagramme et la visite guidé
   Exercise:
   
   Implémenter le scénario suivant: 
-
-  Scenario Outline: invalid challenge
-    Given I'm authenticated as "<first_name_user>" "<last_name_user>"
-    When I create an existing challenge with title "<challenge_title>" and category "<category>"
-    Then I see the modification no any new challenge is created
-
+<p>
+  <br/>Scenario Outline: invalid challenge
+  <br/>  Given I'm authenticated as "<first_name_user>" "<last_name_user>"
+  <br/>  When I create an existing challenge with title "<challenge_title>" and category "<category>"
+  <br/>  Then I see the modification no any new challenge is created
+</p>
     Examples:
       | first_name_user | last_name_user | challenge_title               |  category         |
       | Seldon          | Seldon         |                               |  alimentation     |
