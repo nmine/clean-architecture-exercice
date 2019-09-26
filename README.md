@@ -42,8 +42,7 @@ Pour ce faire,
 <br/> -Ecrire le code qui fait passer la rêgle métier
 <br/> -Ecrire le test d'intégration
 <br/> -Ecrire le code qui fait passer le test d'intégration
-<br/>2)
-<br/>Implémenter un scénario avec une nouvelle use case:
+<br/>2) Implémenter un scénario avec une nouvelle use case:
 <br/>Feature:  All user - Delete challenge
   <br/>A user want to Delete a existing  challenge
 
