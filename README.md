@@ -20,7 +20,7 @@ Pour visualiser la documentation (le wordcloud, le diagramme et la visite guidé
   <br><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Naereen/StrapDown.js@master/strapdown.min.js"></script>
   
   Exercise:
-  
+  1)
   Implémenter le scénario suivant: 
 <p>
   <br/>Scenario Outline: invalid challenge
@@ -45,6 +45,7 @@ Pour ce faire,
 <br/> -Ecrire le test d'intégration
 <br/> -Ecrire le code qui fait passer le test d'intégration
 
+2)
 <br/>Implémenter un scénario avec une nouvelle use case:
 <br/>Feature:  All user - Delete challenge
   <br/>A user want to Delete a existing  challenge
