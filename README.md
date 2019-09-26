@@ -13,10 +13,10 @@ Des plugs in Maven permetant de faire de la 'living documentation' ont été ajo
 Pour visualiser la documentation (le wordcloud, le diagramme et la visite guidée) Il faut rajouter les lignes suivantes entre les tags head des pages html :
 
 
-   ```<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>```
-  ```<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js"></script>```
-  ```<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.3.0/viz.js"></script>```
-  ```<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Naereen/StrapDown.js@master/strapdown.min.js"></script>```
+  <br><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <br><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3-cloud/1.2.5/d3.layout.cloud.min.js">    </script>
+  <br><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.3.0/viz.js"></script>
+  <br><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Naereen/StrapDown.js@master/strapdown.min.js"></script>
   
   Exercise:
   
