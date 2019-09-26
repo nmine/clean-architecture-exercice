@@ -3,6 +3,11 @@ Ce projet a pour but de montrer une application simple basé sur ma présention 
 
 Il s'agit d'un use case ('création d'un challenge') réalisé en suivant les principes et techniques énoncés dans la présentation
 
+L'architecture de l'application respecte les couches DDD (Infrastructure, Domain, Application) et utilise les command/handler.
+
+Cette architecture est illustré dans l'image ci-dessous (http://www.atrenko.com/blog/2018/05/03/clean-architecture/):
+![alt text](http://www.atrenko.com/public/images/clean_architecture/layers.jpg)
+
 L'application devrait permetre de créer , visualiser et suivre des 'Challenge', qui sont des défis créé par l'utilisateur que celui-ci tentera de réaliser chaque jour.
 
 Des plugs in Maven permetant de faire de la 'living documentation' ont été ajouté (ils sont expliqué à cette adresse : https://livingdocumentation.github.io/livingdoc-maven-plugin/).
