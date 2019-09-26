@@ -19,7 +19,9 @@ Pour visualiser la documentation (le wordcloud, le diagramme et la visite guidé
   <br><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/viz.js/1.3.0/viz.js"></script>
   <br><script type="text/javascript" src="https://cdn.jsdelivr.net/gh/Naereen/StrapDown.js@master/strapdown.min.js"></script>
   <br/>Exercise:
+  <br/>
   <br/>1) Implémenter le scénario suivant: 
+  <br/>
   <br/>Scenario Outline: invalid challenge
   <br/>  Given I'm authenticated as "<first_name_user>" "<last_name_user>"
   <br/>  When I create an existing challenge with title "<challenge_title>" and category "<category>"
@@ -42,6 +44,7 @@ Pour ce faire,
 <br/> -Ecrire le code qui fait passer le test d'intégration
 <br/>
 <br/>2) Implémenter un scénario avec une nouvelle use case:
+<br/>
 <br/>Feature:  All user - Delete challenge
   <br/>A user want to Delete a existing  challenge
 
